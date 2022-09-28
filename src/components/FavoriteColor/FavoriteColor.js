@@ -1,14 +1,14 @@
 import { useState } from "react";
 import "./FavoriteColor.css";
 
-function FavoriteColor({ name }) {
+function FavoriteColor({ name, favColor }) {
   const [color, setColor] = useState("blue");
 
   return (
     <section className="favorite-color">
       <h2>{name}'s favorite color is: </h2>
       <div className={`favorite-color__box ${color}`}>{color}</div>
-      {color === "red" && <p>Yes, red is the best color!!!</p>}
+      {color === favColor && <p>Yes, {favColor} is the best color!!!</p>}
       <button
         onClick={() => {
           setColor("blue");

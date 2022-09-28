@@ -8,9 +8,9 @@ function ColorPage() {
         <h1>ColorPage</h1>
       </header>
       <main className="color-page">
-        <FavoriteColor name="Mario" />
-        <FavoriteColor name="Luigi" />
-        <FavoriteColor name="Bowser" />
+        <FavoriteColor name="Mario" favColor="red"/>
+        <FavoriteColor name="Luigi" favColor="green"/>
+        <FavoriteColor name="Bowser" favColor="blue"/>
       </main>
     </>
   );
